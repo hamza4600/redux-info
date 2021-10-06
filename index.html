@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>React Redux</title>
+</head>
+<body class="boy">
+    <div class="top">
+    <h1 class="aa">React Redux</h1>
+    <div class="site">
+        <div class="pop">
+            <section class="ada">
+                <div class="pip">
+                    <div class="inner">
+                        <div class="pdp">
+                            <h1>Redux</h1>
+                            <h4 class="has">It is a state managment container for javascript app</h4>
+                            <h6 class="has"> It can be use in any library Angular Vue and React </h6>
+                            <h6 class="has">It store the state of an application</h6>
+                            <h6 class="has">In large app we have alot of logic for user input and othe components </h6>
+                            <button>Form</button>
+                            <h6 class="has">Login Form components
+                                usename:" " password:""
+                            </h6>
+                            <p>They are enter by the use so left empty</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </div>
+
+
+    <div class="yy">
+        <div class="xyz">
+            <h6 class="int">  Overview</h6>
+            <p>It conatin an array of user [] that will be show to the user
+                <ul>It is simply state mangment container</ul>
+                <ul>we can keep track of all our components state</ul>
+                <ul>If we want to pass Props to Differnt Component we have to lift the state of component and pass as a props to another component</ul>
+                <ul>It Make application more complex</ul>
+            </p>
+
+        </div>
+    
+        <div class="xyz">
+            <h6 class="int">Detail</h6>
+            <p>why we use Redux
+                <ul>In an application if we want to pass Data to serverL components and in different Layers we simpley have to pass Data as a Props to Parent components That make if complex and Difficult </ul>
+                <ul>By using Redux we can pas the components in which we want to pass Props and change the State </ul>
+                <ul>It make Life more Eaxy</ul>
+            </p>
+        </div>
+    
+        <div class="xyz">
+            <h6 class="int">Start Redux</h6>
+            <p>How to start redux app 
+                <ul>Creat a folder go inside the folder and Open Terminat and type <span>npm init --yes</span> </ul>
+                <ul>It will creat local file which will show the .json file which show dependincy</ul>
+                <ul>Now type <span>npm install redux</span></ul>
+                <ul>Now creat a <span>Index.js file</span> in the folder</ul>
+            </p>
+
+        </div>
+        
+        <div class="xyz">
+            <h6 class="int">3 Concepts</h6>
+            <p>3 Main concepts
+                <ul><span>Store</span> Hold the state of an application</ul>
+                <ul><span>Action</span>Desribe what will happen when state will change</ul>
+                <ul><span>Reducer</span>It Ties the store and Action together</ul>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="dyt">
+        <h1>Three Main Principle</h1>
+        <p>
+            <span>1st Principle</span>
+            <ul>The state of whole application is store in a single object which will be manage by the Redux store </ul>
+             <span>2nd Principle</span>
+             <ul>The only way to change state is by emiting action an object descript what happens</ul>
+             <ul>To update state you need to let redux know about with an action</ul>
+             <ul>Not allow to update state object directly</ul>
+             <span>3rd Principle</span>
+             <ul>To update state write pure  Reducer</ul>
+             <ul>To specify how the state will transfer by action write your Reducer</ul>
+             <ul> <span> Reducer (preState + Action)=> newState   </span>
+             </ul>
+        </p>
+        <h1>Action</h1>
+        <p><ul>An action is an Object with type properties and Action Creator is an function that return the function</ul>
+        <ul>Type property indicate the action to be perform</ul></p>
+            <h1>Reducer</h1>
+            <p><ul>
+                It specify how app change or responce to action sent to redux store
+            </ul>
+            <ul>Function that accept state and argument and return the next state of application</ul>
+            <ul>(prevActin,State)=>newState</ul>
+        </p>
+
+            <h1>Redux Store</h1>
+            <p>
+                <ul>It Hold Application state</ul>
+                <ul>Allow Access to getState (state)  </ul>
+                <ul>Allow acces to update state and regester listner</ul>
+                <ul>Also Handal unregester  of listner the function return by  subscriber</ul>
+            </p>
+
+            <h1>Multiple Reducer in App</h1>
+            <p>
+                <ul>we can use multiple Reducer in our app </ul>
+                <ul>If we use single state reducer ity will Quite complex to handle for us sowe use multiple reducer </ul>
+                <ul>we can create differenr reducer in differnt reducer file make their logic it will make our life easy</ul>
+            </p>
+            <h1>Middleware</h1>
+            <p>
+                <ul>It is used to add custom functionality in Redux</ul>
+                <ul>Provider a thired party extension between  dispatch action  </ul>
+                <ul>It is also used for LOGGING, CRASH REPOTING, PERFORMING ASCRONHING TASK</ul>
+                <ul>Install it form <span>npm install redux-logger</span></ul>
+                <ul>use the redux-logger functions and creat logger</ul>
+                <ul> we will import redux-logger and craet a logger in our app and define it at the top of app and user it in redux-store applyMiddleware and pass logger as a propas
+                     it will give us all detail of logg and change in the state</ul>
+            </p>
+            <h1>Action</h1>
+            <p> 
+                <ul>As soon  action is dispatch that state will  immmedatly update  </ul>
+                <ul>It have several components</ul>
+            </p>
+            <h1>State</h1>
+            <p>
+                <ul>satete is an object with several properties</ul>
+                <ul><span>Loading</span>Display spinner for our app and is set true</ul>
+                <ul><span>Data</span>List of users  an is an empty array</ul>
+                <ul><span>Error</span>Dispaly Error is api call is fail our something else</ul>
+
+            </p>
+            <h1>Action</h1>
+            <p>
+                <ul>Fetch-User-Request : Fetch list of users</ul>
+                <ul><span>Fetch-User-Success</span>Fetch succesfull</ul>
+                <ul><span>Fetch-User-failer</span>Error in  fetch Data</ul>
+
+                
+            </p>
+
+
+            <h1>Reducer</h1>
+                <p>
+                    <ul>Now we will set Logic for this all    </ul>
+                </p>
+                <button>use this all in react app </button>
+            </div>
+
+      
+</div>
+
+</body>
+</html>
